@@ -1,0 +1,45 @@
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* מרווח בין האלמנטים */
+    font-family: Arial, sans-serif;
+}
+
+.quantity-display {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 50px;
+    text-align: center;
+    margin: 0;
+}
+
+button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #e5be83b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:disabled {
+    background-color: #cccccc; /* כפתור מנוטרל */
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #808182;
+}
+
+.btn-decrease {
+    background-color: #e5be83b9;
+}
+
+.btn-decrease:hover:not(:disabled) {
+    background-color: #808182;
+}
